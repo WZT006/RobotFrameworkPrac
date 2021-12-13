@@ -29,13 +29,11 @@ Login Page Should Be Open
 Product Page Should Be Open
     Element Text Should Be    class:title    PRODUCTS
 
-Input Username
-    [Arguments]    ${username}
+Product Sorted by
+    [Arguments]     ${Sorting}
+    Element Text Should Be    class:active_option    ${Sorting}
+Input Credentials
+    [Arguments]    ${username}  ${password}
     Input Text    user-name    ${username}
-
-Input Pass
-    [Arguments]    ${password}
-    Input Password    password    ${password}
-
-Submit Credentials
+    Input Password  password    ${password}
     Click Button    login-button
