@@ -19,7 +19,6 @@ ${Home_URL}     https://${Server}/inventory.html
 *** Keywords ***
 Open Browser To Login Page
     Open Browser    ${LOGIN URL}    ${BROWSER}
-    Maximize Browser Window
     Set Selenium Speed    ${DELAY}
     Login Page Should Be Open
 
